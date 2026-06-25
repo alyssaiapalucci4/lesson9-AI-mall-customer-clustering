@@ -60,45 +60,45 @@ SciPy
 How to Run the Project
 1. Clone the Repository
 git clone https://github.com/alyssaiapalucci4/lesson9-AI-mall-customer-clustering.git
+
 2. Open in Google Colab
 
-Upload:
+Upload:Lesson_9_Assignment_AI.ipynb
 
-Mall_Customer_Clustering.ipynb
 3. Upload Dataset
 
-Upload:
-
-Mall_Customers.csv
+Upload: Mall_Customers.csv
 
 Ensure it is in the same working directory as the notebook.
 
 4. Install Dependencies
 pip install pandas numpy matplotlib scikit-learn scipy
+
 5. Run Notebook
 
 Run all cells sequentially to:
+  preprocess data
+  apply clustering models
+  evaluate results
+  visualize clusters and embeddings
 
-preprocess data
-apply clustering models
-evaluate results
-visualize clusters and embeddings
-Results & Outputs
+**Results & Outputs**
 
 The analysis produces:
+  Elbow Method plot
+  Dendrogram visualization
+  K-Means cluster visualization
+  Hierarchical clustering results
+  PCA and t-SNE projections
+  Silhouette score comparison
+  Final interpretation of customer segments
 
-Elbow Method plot
-Dendrogram visualization
-K-Means cluster visualization
-Hierarchical clustering results
-PCA and t-SNE projections
-Silhouette score comparison
-Final interpretation of customer segments
-Key Insights
-Customers can be grouped into distinct behavioral segments based on income and spending patterns
-K-Means provides clear cluster separation for interpretation
-PCA and t-SNE help visualize structure in reduced dimensions
-Clustering results can support targeted marketing strategies
-Conclusion
+**Key Insights**
+  Customers can be grouped into distinct behavioral segments based on income and spending patterns
+  K-Means provides clear cluster separation for interpretation
+  PCA and t-SNE help visualize structure in reduced dimensions
+  Clustering results can support targeted marketing strategies
+  
+**Conclusion**
 
 This project demonstrates how unsupervised learning techniques can be applied to customer segmentation problems. The combination of clustering and dimensionality reduction provides both analytical insights and visual interpretability.
