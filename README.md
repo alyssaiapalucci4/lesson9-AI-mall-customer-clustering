@@ -1,132 +1,104 @@
-# Mall Customer Segmentation using Clustering and Dimensionality Reduction
+**Mall Customer Segmentation using Clustering and Dimensionality Reduction**
+Project Overview
 
-## Project Overview
-This project applies unsupervised machine learning techniques to analyze customer behavior using the Mall Customers dataset. The goal is to identify customer segments based on demographic and spending data. Clustering techniques are used to group similar customers, while dimensionality reduction is used to visualize patterns in lower dimensions.
+This project applies unsupervised machine learning techniques to segment customers from the Mall Customers dataset. The objective is to identify meaningful customer groups based on demographic and spending behavior using clustering methods. Dimensionality reduction techniques are also used to visualize high-dimensional data in lower dimensions.
 
-This project was completed as part of a machine learning assignment focusing on clustering, dimensionality reduction, model evaluation, and deployment strategies.
+This project was completed as part of a machine learning assignment focusing on clustering, evaluation techniques, and data visualization.
 
----
+**Dataset**
 
-## Dataset
-Dataset used: Mall Customers Dataset
+Dataset: Mall Customers Dataset
+Size: 200 records
 
-Features:
-- CustomerID
-- Gender
-- Age
-- Annual Income (k$)
-- Spending Score (1-100)
+**Features:**
 
-The dataset contains 200 customer records and is suitable for clustering analysis because it includes both categorical and numerical variables.
+CustomerID
+Gender
+Age
+Annual Income (k$)
+Spending Score (1–100)
 
----
+The dataset includes both numerical and categorical variables and is well-suited for clustering analysis.
 
-## Objectives
-The objectives of this project are:
+**Objectives**
+Preprocess and prepare data for clustering
+Apply multiple clustering algorithms
+Identify optimal number of clusters
+Visualize customer segments
+Reduce dimensionality for visualization
+Evaluate clustering performance
+Discuss deployment and monitoring considerations
 
-- Preprocess the dataset for clustering
-- Apply multiple clustering algorithms
-- Determine the optimal number of clusters
-- Visualize customer segments
-- Apply dimensionality reduction techniques
-- Evaluate clustering performance
-- Discuss deployment and monitoring strategies
+**Methods**
+Data Preprocessing
+Missing value check
+Feature selection
+One-hot encoding for categorical variables
+Feature scaling (standardization)
 
----
+**Clustering Algorithms**
+K-Means Clustering
+Hierarchical Clustering
 
-## Methods Used
+**Cluster Evaluation**
+Elbow Method
+Silhouette Score
 
-### Data Preprocessing
-- Missing value check
-- Removal of unnecessary columns
-- One-hot encoding for categorical variables
-- Standardization of features
+**Dimensionality Reduction**
+Principal Component Analysis (PCA)
+t-SNE
 
-### Clustering Techniques
-- K-Means Clustering
-- Hierarchical Clustering
+**Technologies Used**
+Python
+Google Colab
+Pandas
+NumPy
+Matplotlib
+Scikit-learn
+SciPy
 
-### Cluster Evaluation
-- Elbow Method
-- Silhouette Score
-
-### Dimensionality Reduction
-- Principal Component Analysis (PCA)
-- t-SNE
-
----
-
-## Technologies Used
-- Python
-- Google Colab
-- Pandas
-- NumPy
-- Matplotlib
-- Scikit-learn
-- SciPy
-
-## How to Run the Project
-
-Follow these steps to run the project in Google Colab:
-
-### Step 1: Clone the Repository
-Open your terminal or Git Bash and run:
-
-```bash
+How to Run the Project
+1. Clone the Repository
 git clone https://github.com/alyssaiapalucci4/lesson9-AI-mall-customer-clustering.git
-```
+2. Open in Google Colab
 
-This will download all project files to your computer.
+Upload:
 
----
+Mall_Customer_Clustering.ipynb
+3. Upload Dataset
 
-### Step 2: Open Google Colab
-Go to Google Colab and upload the notebook file:
+Upload:
 
-`Mall_Customer_Clustering.ipynb`
+Mall_Customers.csv
 
----
+Ensure it is in the same working directory as the notebook.
 
-### Step 3: Upload the Dataset
-Upload the dataset file into your Colab environment:
-
-`Mall_Customers.csv`
-
-Make sure the dataset is in the same working directory as the notebook.
-
----
-
-### Step 4: Install Required Libraries
-If any libraries are missing, install them using:
-
-```bash
+4. Install Dependencies
 pip install pandas numpy matplotlib scikit-learn scipy
-```
+5. Run Notebook
 
----
+Run all cells sequentially to:
 
-### Step 5: Run the Notebook
-Run all cells from top to bottom to:
+preprocess data
+apply clustering models
+evaluate results
+visualize clusters and embeddings
+Results & Outputs
 
-- preprocess the dataset
-- perform clustering analysis
-- determine the optimal number of clusters
-- visualize customer segments
-- apply dimensionality reduction (PCA and t-SNE)
-- evaluate model performance
+The analysis produces:
 
----
+Elbow Method plot
+Dendrogram visualization
+K-Means cluster visualization
+Hierarchical clustering results
+PCA and t-SNE projections
+Silhouette score comparison
+Final interpretation of customer segments
+Key Insights
+Customers can be grouped into distinct behavioral segments based on income and spending patterns
+K-Means provides clear cluster separation for interpretation
+PCA and t-SNE help visualize structure in reduced dimensions
+Clustering results can support targeted marketing strategies
+Conclusion
 
-### Expected Output
-After running the notebook, you will generate:
-
-- Dataset summary and preprocessing results
-- Elbow Method graph
-- Dendrogram visualization
-- K-Means clustering visualization
-- Hierarchical clustering visualization
-- PCA cluster plots
-- t-SNE visualization
-- Silhouette score comparisons
-- Final model interpretation
-- Deployment and monitoring discussion
+This project demonstrates how unsupervised learning techniques can be applied to customer segmentation problems. The combination of clustering and dimensionality reduction provides both analytical insights and visual interpretability.
