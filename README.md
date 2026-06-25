@@ -11,50 +11,50 @@ Dataset: Mall Customers Dataset
 Size: 200 records
 
 **Features:**
-  CustomerID
-  Gender
-  Age
-  Annual Income (k$)
-  Spending Score (1–100)
+- CustomerID
+- Gender
+- Age
+- Annual Income (k$)
+- Spending Score (1–100)
 
 The dataset includes both numerical and categorical variables and is well-suited for clustering analysis.
 
 **Objectives**
-Preprocess and prepare data for clustering
-Apply multiple clustering algorithms
-Identify optimal number of clusters
-Visualize customer segments
-Reduce dimensionality for visualization
-Evaluate clustering performance
-Discuss deployment and monitoring considerations
+- Preprocess and prepare data for clustering
+- Apply multiple clustering algorithms
+- Identify optimal number of clusters
+- Visualize customer segments
+- Reduce dimensionality for visualization
+- Evaluate clustering performance
+- Discuss deployment and monitoring considerations
 
 **Methods**
 Data Preprocessing
-Missing value check
-Feature selection
-One-hot encoding for categorical variables
-Feature scaling (standardization)
+- Missing value check
+- Feature selection
+- One-hot encoding for categorical variables
+- Feature scaling (standardization)
 
 **Clustering Algorithms**
-K-Means Clustering
-Hierarchical Clustering
+- K-Means Clustering
+- Hierarchical Clustering
 
 **Cluster Evaluation**
-Elbow Method
-Silhouette Score
+- Elbow Method
+- Silhouette Score
 
 **Dimensionality Reduction**
-Principal Component Analysis (PCA)
-t-SNE
+- Principal Component Analysis (PCA)
+- t-SNE
 
 **Technologies Used**
-Python
-Google Colab
-Pandas
-NumPy
-Matplotlib
-Scikit-learn
-SciPy
+- Python
+- Google Colab
+- Pandas
+- NumPy
+- Matplotlib
+- Scikit-learn
+- SciPy
 
 How to Run the Project
 1. Clone the Repository
@@ -76,27 +76,27 @@ pip install pandas numpy matplotlib scikit-learn scipy
 5. Run Notebook
 
 Run all cells sequentially to:
-  preprocess data
-  apply clustering models
-  evaluate results
-  visualize clusters and embeddings
+- preprocess data
+- apply clustering models
+- evaluate results
+- visualize clusters and embeddings
 
 **Results & Outputs**
 
 The analysis produces:
-  Elbow Method plot
-  Dendrogram visualization
-  K-Means cluster visualization
-  Hierarchical clustering results
-  PCA and t-SNE projections
-  Silhouette score comparison
-  Final interpretation of customer segments
+- Elbow Method plot
+- Dendrogram visualization
+- K-Means cluster visualization
+- Hierarchical clustering results
+- PCA and t-SNE projections
+- Silhouette score comparison
+- Final interpretation of customer segments
 
 **Key Insights**
-  Customers can be grouped into distinct behavioral segments based on income and spending patterns
-  K-Means provides clear cluster separation for interpretation
-  PCA and t-SNE help visualize structure in reduced dimensions
-  Clustering results can support targeted marketing strategies
+- Customers can be grouped into distinct behavioral segments based on income and spending patterns
+- K-Means provides clear cluster separation for interpretation
+- PCA and t-SNE help visualize structure in reduced dimensions
+- Clustering results can support targeted marketing strategies
   
 **Conclusion**
 
