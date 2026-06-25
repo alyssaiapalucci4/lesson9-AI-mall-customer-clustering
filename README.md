@@ -1,4 +1,4 @@
-**Mall Customer Segmentation using Clustering and Dimensionality Reduction**
+## Mall Customer Segmentation using Clustering and Dimensionality Reduction
 Project Overview
 
 This project applies unsupervised machine learning techniques to segment customers from the Mall Customers dataset. The objective is to identify meaningful customer groups based on demographic and spending behavior using clustering methods. Dimensionality reduction techniques are also used to visualize high-dimensional data in lower dimensions.
