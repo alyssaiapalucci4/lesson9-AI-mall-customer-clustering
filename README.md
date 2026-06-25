@@ -1,72 +1,130 @@
 ## Mall Customer Segmentation using Clustering and Dimensionality Reduction
+
 Project Overview
 
-This project applies unsupervised machine learning techniques to segment customers from the Mall Customers dataset. The objective is to identify meaningful customer groups based on demographic and spending behavior using clustering methods. Dimensionality reduction techniques are also used to visualize high-dimensional data in lower dimensions.
+This project applies unsupervised learning techniques to segment customers using the Mall Customers dataset. The goal is to identify meaningful customer groups based on demographic and spending behavior using clustering algorithms. Dimensionality reduction techniques are used to visualize high-dimensional data in 2D space.
 
-This project was completed as part of a machine learning assignment focusing on clustering, evaluation techniques, and data visualization.
-
-**Dataset**
+Dataset
 
 Dataset: Mall Customers Dataset
 Size: 200 records
 
-**Features:**
+Features:
+
 - CustomerID
 - Gender
 - Age
 - Annual Income (k$)
 - Spending Score (1–100)
 
-The dataset includes both numerical and categorical variables and is well-suited for clustering analysis.
+The dataset contains demographic and spending information and is suitable for clustering analysis.
 
 **Objectives**
-- Preprocess and prepare data for clustering
-- Apply multiple clustering algorithms
-- Identify optimal number of clusters
-- Visualize customer segments
-- Reduce dimensionality for visualization
+- Explore and preprocess the dataset
+- Apply clustering algorithms
+- Determine optimal number of clusters
 - Evaluate clustering performance
-- Discuss deployment and monitoring considerations
+- Visualize clusters using PCA and t-SNE
+- Compare clustering methods
+  
+Data Exploration
 
-**Methods**
-Data Preprocessing
-- Missing value check
-- Feature selection
-- One-hot encoding for categorical variables
-- Feature scaling (standardization)
+The dataset was loaded into Google Colab and explored using:
 
-**Clustering Algorithms**
-- K-Means Clustering
-- Hierarchical Clustering
+- head() for preview
+- shape for dataset size
+- info() for structure
+- describe() for statistics
+- Missing value check (isnull().sum())
 
-**Cluster Evaluation**
-- Elbow Method
-- Silhouette Score
+No missing values were found in the dataset.
+
+**Data Preprocessing**
+
+The following preprocessing steps were applied:
+
+- Removed CustomerID (not useful for clustering)
+- Converted Gender into numerical format using one-hot encoding (get_dummies)
+- Applied feature scaling using StandardScaler
+
+These steps ensured all variables were on the same scale for distance-based clustering algorithms.
+
+**Clustering Methods**
+
+K-Means Clustering
+- Elbow Method was used to determine optimal clusters
+- Optimal number of clusters selected: 5
+- Model evaluated using Silhouette Score
+  
+**Hierarchical Clustering (Agglomerative Clustering)**
+- Dendrogram was used to determine number of clusters
+- Model also set to 5 clusters
+- Evaluated using Silhouette Score
 
 **Dimensionality Reduction**
-- Principal Component Analysis (PCA)
-- t-SNE
+Principal Component Analysis (PCA)
+- Reduced dataset to 2 components
+- Used for visualization of clusters
+- Helped identify separation between groups
 
-**Technologies Used**
-- Python
-- Google Colab
-- Pandas
-- NumPy
-- Matplotlib
-- Scikit-learn
-- SciPy
 
-How to Run the Project
+**t-distributed Stochastic Neighbor Embedding (t-SNE)**
+
+- Used for nonlinear visualization of clusters
+- Provided clearer separation of customer groups compared to PCA
+
+
+**Results and Evaluation**
+Silhouette Scores
+- K-Means: 0.2719
+- Hierarchical Clustering: 0.2870
+
+Hierarchical Clustering performed slightly better based on silhouette score.
+
+Both models produced meaningful segmentation with 5 customer groups, including:
+
+- High income, high spending
+- High income, low spending
+- Low income, high spending
+- Low income, low spending
+  
+**Key Insights**
+- Clustering successfully identified distinct customer segments
+- PCA and t-SNE helped visualize group structure in reduced dimensions
+- Hierarchical clustering slightly outperformed K-Means
+- Customer behavior patterns were clearly separable after preprocessing
+  
+**Deployment and Monitoring**
+
+If deployed in a business setting, this model could be used for customer segmentation in marketing strategies.
+
+Example Use Cases:
+- High-value customers receive premium offers
+- Low-spending customers receive discounts
+  
+**Monitoring Strategy:**
+- Track changes in customer behavior over time
+- Monitor silhouette score after retraining
+- Detect data drift
+- Retrain model when patterns change
+  
+**Conclusion**
+
+This project demonstrates how unsupervised learning techniques can be applied to customer segmentation. Both K-Means and Hierarchical Clustering were effective, with Hierarchical clustering performing slightly better. PCA and t-SNE improved interpretability by visualizing clusters in lower dimensions.
+
+The project highlights the importance of preprocessing, clustering evaluation, and visualization in extracting business insights from data.
+
+**How to Run the Project**
 1. Clone the Repository
 git clone https://github.com/alyssaiapalucci4/lesson9-AI-mall-customer-clustering.git
 
 2. Open in Google Colab
 
-Upload:Lesson_9_Assignment_AI.ipynb
+Upload the notebook file:Lesson_9_Assignment_AI.ipynb
 
 3. Upload Dataset
 
-Upload: Mall_Customers.csv
+Upload:Mall_Customers.csv
 
 Ensure it is in the same working directory as the notebook.
 
@@ -76,28 +134,9 @@ pip install pandas numpy matplotlib scikit-learn scipy
 5. Run Notebook
 
 Run all cells sequentially to:
-- preprocess data
-- apply clustering models
-- evaluate results
-- visualize clusters and embeddings
 
-**Results & Outputs**
-
-The analysis produces:
-- Elbow Method plot
-- Dendrogram visualization
-- K-Means cluster visualization
-- Hierarchical clustering results
-- PCA and t-SNE projections
-- Silhouette score comparison
-- Final interpretation of customer segments
-
-**Key Insights**
-- Customers can be grouped into distinct behavioral segments based on income and spending patterns
-- K-Means provides clear cluster separation for interpretation
-- PCA and t-SNE help visualize structure in reduced dimensions
-- Clustering results can support targeted marketing strategies
-  
-**Conclusion**
-
-This project demonstrates how unsupervised learning techniques can be applied to customer segmentation problems. The combination of clustering and dimensionality reduction provides both analytical insights and visual interpretability.
+explore and preprocess the dataset
+apply clustering models (K-Means and Hierarchical Clustering)
+determine optimal number of clusters using Elbow Method and Dendrogram
+evaluate models using Silhouette Score
+visualize clusters using PCA and t-SNE
