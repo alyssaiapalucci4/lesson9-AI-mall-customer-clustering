@@ -66,3 +66,24 @@ The objectives of this project are:
 - SciPy
 
 ---
+## How to Run the Project
+
+### 1. Clone the repository
+```bash
+https://github.com/alyssaiapalucci4/lesson9-AI-mall-customer-clustering
+
+### 2. Open Google Colab
+Upload the notebook file:
+`Mall_Customer_Clustering.ipynb`
+
+### 3. Upload the dataset
+Make sure the dataset file is uploaded into Colab:
+`Mall_Customers.csv`
+
+### 4. Install required libraries (if needed)
+```bash
+pip install pandas numpy matplotlib scikit-learn scipy
+```
+
+### 5. Run all cells
+Run the notebook from top to bottom to reproduce the clustering analysis, dimensionality reduction visualizations, and evaluation results.
