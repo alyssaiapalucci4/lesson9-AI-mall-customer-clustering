@@ -11,12 +11,11 @@ Dataset: Mall Customers Dataset
 Size: 200 records
 
 **Features:**
-
-CustomerID
-Gender
-Age
-Annual Income (k$)
-Spending Score (1–100)
+  CustomerID
+  Gender
+  Age
+  Annual Income (k$)
+  Spending Score (1–100)
 
 The dataset includes both numerical and categorical variables and is well-suited for clustering analysis.
 
