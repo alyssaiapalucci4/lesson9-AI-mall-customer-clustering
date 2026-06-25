@@ -64,3 +64,69 @@ The objectives of this project are:
 - Matplotlib
 - Scikit-learn
 - SciPy
+
+## How to Run the Project
+
+Follow these steps to run the project in Google Colab:
+
+### Step 1: Clone the Repository
+Open your terminal or Git Bash and run:
+
+```bash
+git clone https://github.com/alyssaiapalucci4/lesson9-AI-mall-customer-clustering.git
+```
+
+This will download all project files to your computer.
+
+---
+
+### Step 2: Open Google Colab
+Go to Google Colab and upload the notebook file:
+
+`Mall_Customer_Clustering.ipynb`
+
+---
+
+### Step 3: Upload the Dataset
+Upload the dataset file into your Colab environment:
+
+`Mall_Customers.csv`
+
+Make sure the dataset is in the same working directory as the notebook.
+
+---
+
+### Step 4: Install Required Libraries
+If any libraries are missing, install them using:
+
+```bash
+pip install pandas numpy matplotlib scikit-learn scipy
+```
+
+---
+
+### Step 5: Run the Notebook
+Run all cells from top to bottom to:
+
+- preprocess the dataset
+- perform clustering analysis
+- determine the optimal number of clusters
+- visualize customer segments
+- apply dimensionality reduction (PCA and t-SNE)
+- evaluate model performance
+
+---
+
+### Expected Output
+After running the notebook, you will generate:
+
+- Dataset summary and preprocessing results
+- Elbow Method graph
+- Dendrogram visualization
+- K-Means clustering visualization
+- Hierarchical clustering visualization
+- PCA cluster plots
+- t-SNE visualization
+- Silhouette score comparisons
+- Final model interpretation
+- Deployment and monitoring discussion
